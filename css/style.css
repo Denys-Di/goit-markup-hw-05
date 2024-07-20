@@ -692,9 +692,6 @@ img {
 
 
 .modal-label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -715,10 +712,10 @@ img {
     fill: transparent;
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 
