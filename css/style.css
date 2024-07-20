@@ -151,7 +151,7 @@ nav ul {
 
 .e-mail-form {
     display: flex;
-    
+    gap: 24px;
     
 }
 
@@ -173,6 +173,7 @@ nav ul {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    margin-left: 24px;
 }
 
 .e-mail-input {
@@ -198,7 +199,6 @@ nav ul {
     border-radius: 4px;
     min-width: 165px;
     height: 40px;
-    margin-left: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -546,23 +546,24 @@ img {
     fill: #2e2f42;
 }
 
-.icon-close:hover {
-    fill: #ffffff;
-}
 
-.icon-close:focus {
-    fill: #ffffff;
-}
+
 
 .modal-button:hover {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff;
 }
 
 .modal-button:focus {
     background-color: #404bbf;
     border: none;
+}
+
+.modal-button:hover  .icon-close {
+    fill: #ffffff;
+}
+
+.modal-button:focus .icon-close {
     fill: #ffffff;
 }
 
@@ -602,6 +603,7 @@ img {
     padding-left: 16px;
     padding-top: 8px;   
     background-color: transparent;
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-textarea::placeholder {
@@ -613,9 +615,8 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8e8f99;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
@@ -652,6 +653,10 @@ img {
     margin-bottom: 8px;
 }
 
+.label-form-comment {
+    margin-bottom: 16px
+}
+
 .modal-field-wrap {
     position: relative;
 }
@@ -686,7 +691,7 @@ img {
     align-items: center;
     gap: 8px;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     
@@ -695,16 +700,19 @@ img {
 .modal-check:checked + .modal-label .cub {
     background-color: #404bbf;
     border: none;
+    fill: #F4F4FD;
 }
 
 .cub { 
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    fill: transparent;
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -714,6 +722,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
@@ -736,3 +745,5 @@ img {
     
     
 }
+
+
