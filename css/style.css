@@ -193,6 +193,7 @@ nav ul {
 .footer-button {
     display: flex;
     justify-content: center;
+    align-items: center;
     border: none;  
     padding: 8px 16px;
     background: #4d5ae5;
